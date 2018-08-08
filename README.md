@@ -232,6 +232,14 @@ When there are header conflicts, the last header definition always wins. The hea
 
 when accessing `/foo`, `X-Foo` will have the value `"foo"` and `X-Bar` will not be present.
 
+#### Max upload file size
+Directly sets nginx client_max_body_size parameter. If not set, default 1M will be used.
+```json
+{
+  "max_upload_file_size": "8M"
+}
+```
+
 ### Route Ordering
 
 * HTTPS redirect
